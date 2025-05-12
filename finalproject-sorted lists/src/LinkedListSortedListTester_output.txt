@@ -1,0 +1,195 @@
+/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=51892:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /Users/katrinakainembabazi/IdeaProjects/finalproject-sorted lists/out/production/finalproject-sorted lists LinkedListSortedListTester
+-------------------------------------------------
+--------- Testing with Integers -----------------
+-------------------------------------------------
+
+
+=============================
+Test Case 1. public void add(T newEntry)
+=============================
+Adding 5, 3, 8, 99, 88, 77, 44 and 55 to the list
+LinkedListSortedList@506e6d5e
+Passed: Actual and Expected Arrays are equal.
+
+
+=============================
+Test Case 2. public boolean remove(T anEntry);
+=============================
+LinkedListSortedList@506e6d5e
+Remove Integer(5) object? true
+LinkedListSortedList@506e6d5e
+Passed: Actual and Expected Arrays are equal.
+
+Remove non-existing Integer(115)? false
+LinkedListSortedList@506e6d5e
+Passed: Actual and Expected Arrays are equal.
+
+
+=============================
+Test Case 3. public int getPosition(T anEntry);
+=============================
+LinkedListSortedList@506e6d5e
+Position of 44: 3
+Test Case 3 passed
+Position of 45: -4
+Test Case 3 passed
+
+
+=============================
+Test Case 4. public T getEntry(int givenPosition);
+=============================
+LinkedListSortedList@506e6d5e
+get the Entry at position 5: 77
+Test Case 4 passed
+
+
+=============================
+Test Case 5. public boolean contains(T anEntry);
+=============================
+LinkedListSortedList@506e6d5e
+Contains 99? true
+Test Case 5 passed
+Contains 189? false
+Test Case 5 passed
+
+
+=============================
+Test Case 6. public T remove(int givenPosition);
+=============================
+LinkedListSortedList@506e6d5e
+Removed the element at position 5? 77
+LinkedListSortedList@506e6d5e
+Passed: Actual and Expected Arrays are equal.
+Test Case 6 passed
+
+
+=============================
+Test Case 7. public int getLength();
+=============================
+LinkedListSortedList@506e6d5e
+Length of the sorted list: 6
+Test Case 7 passed
+
+
+=============================
+Test Case 8. public boolean isEmpty();
+=============================
+LinkedListSortedList@506e6d5e
+is the SortedList empty? false
+Test Case 8 passed
+
+
+=============================
+Test Case 9. public T[] toArray();
+=============================
+LinkedListSortedList@506e6d5e
+Passed: Actual and Expected Arrays are equal.
+
+
+=============================
+Test Case 10. public void clear();
+=============================
+Test Case 10 passed
+
+
+-------------------------------------------------
+--------- Testing with Strings -----------------
+-------------------------------------------------
+
+
+
+=============================
+Test Case 1. public void add(T newEntry)
+=============================
+Adding "chris", "barb", "alissa", "zack", "nikhil", "yared", "anna", "peter" to the list
+LinkedListSortedList@1554909b
+Passed: Actual and Expected Arrays are equal.
+
+
+=============================
+Test Case 2. public boolean remove(T anEntry);
+=============================
+LinkedListSortedList@1554909b
+Remove String("chris") object? true
+LinkedListSortedList@1554909b
+Passed: Actual and Expected Arrays are equal.
+
+Remove non-existing String("james")? false
+LinkedListSortedList@1554909b
+Passed: Actual and Expected Arrays are equal.
+
+
+=============================
+Test Case 3. public int getPosition(T anEntry);
+=============================
+LinkedListSortedList@1554909b
+Position of "barb": 3
+Test Case 3 passed
+Position of "zebra": -8
+Test Case 3 passed
+
+
+=============================
+Test Case 4. public T getEntry(int givenPosition);
+=============================
+LinkedListSortedList@1554909b
+Entry for position 4: nikhil
+Test Case 4 passed
+
+
+=============================
+Test Case 5. public boolean contains(T anEntry);
+=============================
+LinkedListSortedList@1554909b
+Contains "peter"? true
+Test Case 5 passed
+Contains "john"? false
+Test Case 5 passed
+
+
+=============================
+Test Case 6. public T remove(int givenPosition);
+=============================
+LinkedListSortedList@1554909b
+Removed the element at position 5? peter
+LinkedListSortedList@1554909b
+Passed: Actual and Expected Arrays are equal.
+Test Case 6 passed
+
+
+=============================
+Test Case 7. public int getLength();
+=============================
+LinkedListSortedList@1554909b
+Length of the sorted list: 6
+Test Case 7 passed
+
+
+=============================
+Test Case 8. public boolean isEmpty();
+=============================
+LinkedListSortedList@1554909b
+is the SortedList empty? false
+Test Case 8 passed
+
+
+=============================
+Test Case 9. public T[] toArray();
+=============================
+LinkedListSortedList@1554909b
+Passed: Actual and Expected Arrays are equal.
+
+
+=============================
+Test Case 10. public void clear();
+=============================
+Test Case 10 passed
+
+
+-------------------------------------------------
+--------- Your final score -----------------
+-------------------------------------------------
+
+Your final score for LinkedListSortedList (out of 50 points) = 50.0
+
+Process finished with exit code 0

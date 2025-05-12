@@ -1,0 +1,23 @@
+Chapter 20 Summary:
+
+The entries in the ADT dictionary each contain two parts: a search key and a value associated with that key. The dictionary identifies its entries by their search keys.
+
+An English dictionary, a directory of telephone numbers, an address book, and a library catalog are common examples of dictionaries.
+
+You can add an entry to a dictionary given its search key and value. You can retrieve or remove an entry given only its search key. By using an iterator, you can traverse all the keys or all the values in a dictionary.
+
+Dictionaries can organize their search keys in either sorted or unsorted order. They can require distinct search keys or allow duplicate ones.
+
+Whether a dictionary has sorted or unsorted search keys is an implementation detail that can affect the efficiency of its operations.
+
+The Java Class Library contains the interface Map, which is similar to our DictionaryInterface.
+
+Chapter 21 Summary:
+
+You can implement a dictionary by using either an array or a chain of linked nodes. A linked implementation does not require a good estimate of the dictionary’s ultimate size. When you use an array that is too small, you need to copy its entries to a new, larger array. If you use an array that is larger than necessary, you waste space. Neither of these situations occurs with a linked implementation.
+
+For a sorted or unsorted dictionary, the addition or removal of an entry is an O(n) operation regardless of whether you use an array or a chain to implement it. Realize, however, that an array requires the shifting of its entries, whereas a linked chain does not.
+
+Using an array to implement a sorted dictionary allows for an efficient retrieval operation because you can use a binary search.
+
+To implement the method getKeyIterator or getValueIterator, define a private inner class for the dictionary class. This private class should implement the interface java.util.Iterator.

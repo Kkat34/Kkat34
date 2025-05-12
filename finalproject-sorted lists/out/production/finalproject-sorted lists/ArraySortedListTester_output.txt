@@ -1,0 +1,195 @@
+/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=51886:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /Users/katrinakainembabazi/IdeaProjects/finalproject-sorted lists/out/production/finalproject-sorted lists ArraySortedListTester
+-------------------------------------------------
+--------- Testing with Integers -----------------
+-------------------------------------------------
+
+
+=============================
+Test Case 1. public void add(T newEntry)
+=============================
+Adding 5, 3, 8, 99, 88, 77, 44 and 55 to the list
+ArraySortedList@2acf57e3
+Passed: Actual and Expected Arrays are equal.
+
+
+=============================
+Test Case 2. public boolean remove(T anEntry);
+=============================
+ArraySortedList@2acf57e3
+Remove Integer(5) object? true
+ArraySortedList@2acf57e3
+Passed: Actual and Expected Arrays are equal.
+
+Remove non-existing Integer(115)? false
+ArraySortedList@2acf57e3
+Passed: Actual and Expected Arrays are equal.
+
+
+=============================
+Test Case 3. public int getPosition(T anEntry);
+=============================
+ArraySortedList@2acf57e3
+Position of 44: 3
+Test Case 3 passed
+Position of 45: -4
+Test Case 3 passed
+
+
+=============================
+Test Case 4. public T getEntry(int givenPosition);
+=============================
+ArraySortedList@2acf57e3
+get the Entry at position 5: 77
+Test Case 4 passed
+
+
+=============================
+Test Case 5. public boolean contains(T anEntry);
+=============================
+ArraySortedList@2acf57e3
+Contains 99? true
+Test Case 5 passed
+Contains 189? false
+Test Case 5 passed
+
+
+=============================
+Test Case 6. public T remove(int givenPosition);
+=============================
+ArraySortedList@2acf57e3
+Removed the element at position 5? 77
+ArraySortedList@2acf57e3
+Passed: Actual and Expected Arrays are equal.
+Test Case 6 passed
+
+
+=============================
+Test Case 7. public int getLength();
+=============================
+ArraySortedList@2acf57e3
+Length of the sorted list: 6
+Test Case 7 passed
+
+
+=============================
+Test Case 8. public boolean isEmpty();
+=============================
+ArraySortedList@2acf57e3
+is the SortedList empty? false
+Test Case 8 passed
+
+
+=============================
+Test Case 9. public T[] toArray();
+=============================
+ArraySortedList@2acf57e3
+Passed: Actual and Expected Arrays are equal.
+
+
+=============================
+Test Case 10. public void clear();
+=============================
+Test Case 10 passed
+
+
+-------------------------------------------------
+--------- Testing with Strings -----------------
+-------------------------------------------------
+
+
+
+=============================
+Test Case 1. public void add(T newEntry)
+=============================
+Adding "chris", "barb", "alissa", "zack", "nikhil", "yared", "anna", "peter" to the list
+ArraySortedList@6108b2d7
+Passed: Actual and Expected Arrays are equal.
+
+
+=============================
+Test Case 2. public boolean remove(T anEntry);
+=============================
+ArraySortedList@6108b2d7
+Remove String("chris") object? true
+ArraySortedList@6108b2d7
+Passed: Actual and Expected Arrays are equal.
+
+Remove non-existing String("james")? false
+ArraySortedList@6108b2d7
+Passed: Actual and Expected Arrays are equal.
+
+
+=============================
+Test Case 3. public int getPosition(T anEntry);
+=============================
+ArraySortedList@6108b2d7
+Position of "barb": 3
+Test Case 3 passed
+Position of "zebra": -8
+Test Case 3 passed
+
+
+=============================
+Test Case 4. public T getEntry(int givenPosition);
+=============================
+ArraySortedList@6108b2d7
+Entry for position 4: nikhil
+Test Case 4 passed
+
+
+=============================
+Test Case 5. public boolean contains(T anEntry);
+=============================
+ArraySortedList@6108b2d7
+Contains "peter"? true
+Test Case 5 passed
+Contains "john"? false
+Test Case 5 passed
+
+
+=============================
+Test Case 6. public T remove(int givenPosition);
+=============================
+ArraySortedList@6108b2d7
+Removed the element at position 5? peter
+ArraySortedList@6108b2d7
+Passed: Actual and Expected Arrays are equal.
+Test Case 6 passed
+
+
+=============================
+Test Case 7. public int getLength();
+=============================
+ArraySortedList@6108b2d7
+Length of the sorted list: 6
+Test Case 7 passed
+
+
+=============================
+Test Case 8. public boolean isEmpty();
+=============================
+ArraySortedList@6108b2d7
+is the SortedList empty? false
+Test Case 8 passed
+
+
+=============================
+Test Case 9. public T[] toArray();
+=============================
+ArraySortedList@6108b2d7
+Passed: Actual and Expected Arrays are equal.
+
+
+=============================
+Test Case 10. public void clear();
+=============================
+Test Case 10 passed
+
+
+-------------------------------------------------
+--------- Your final score -----------------
+-------------------------------------------------
+
+Your final score for ArraySortedList (out of 50 points) = 50.0
+
+Process finished with exit code 0

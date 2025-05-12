@@ -1,23 +1,15 @@
 public class Car {
     // Instance variables
     private String carName;
-    private double mileage; // in miles per gallon
     private double fuelTankCapacity; // in gallons
+    private double mileage; // in miles per gallon
     private double gasLevel; // in gallons
 
-    // Default constructor
-    public Car() {
-        this.carName = "Unknown";
-        this.mileage = 0.0;
-        this.fuelTankCapacity = 0.0;
-        this.gasLevel = 0.0;
-    }
-
     // Overloaded constructor
-    public Car(String carName, double mileage, double fuelTankCapacity) {
+    public Car(String carName, double fuelTankCapacity, double mileage) {
         this.carName = carName;
-        this.mileage = mileage;
         this.fuelTankCapacity = fuelTankCapacity;
+        this.mileage = mileage;
         this.gasLevel = 0.0; // Initially, the gas level is 0
     }
 
@@ -33,10 +25,11 @@ public class Car {
     public void setFuelTankCapacity(double fuelTankCapacity) {
         this.fuelTankCapacity = fuelTankCapacity;
     }
-
     public void setGasLevel(double gasLevel) {
         this.gasLevel = gasLevel;
     }
+
+
 
     // Getters
     public String getCarName() {
@@ -87,16 +80,11 @@ public class Car {
 
     // Method to fill the gas tank
     public void fillGas(double x) {
-        if (x < 0) {
-            System.out.println("Cannot fill negative gas.");
-            return;
-        }
-        double availableSpace = fuelTankCapacity - gasLevel; // Calculate available space in the tank
-        if (x > availableSpace) {
-            gasLevel = fuelTankCapacity; // Fill to capacity
-            System.out.println("Gas tank filled to capacity.");
+        if (gasLevel + x <= fuelTankCapacity) {
+            gasLevel += x;
+            System.out.println("Filled " + x + " gallons of gas into the car " + carName + ".");
         } else {
-            gasLevel += x; // Fill with the specified amount
+            System.out.println("Cannot fill more gas. Tank capacity exceeded.");
         }
     }
 }
